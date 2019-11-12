@@ -87,16 +87,8 @@
         class="ml-0 pl-4"
       >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-        <span class="hidden-sm-and-down">AppVendas</span>
+        <span class="hidden-sm-and-down">Gestão de Vendas</span>
       </v-toolbar-title>
-      <v-text-field
-        flat
-        solo-inverted
-        hide-details
-        prepend-inner-icon="mdi-magnify"
-        label="Procurar"
-        class="hidden-sm-and-down"
-      />
       <v-spacer />
       <v-btn icon>
         <v-icon>mdi-apps</v-icon>
@@ -114,7 +106,7 @@
         >
           <v-img
             alt="logo_Small" 
-            src="../assets/logo.png"
+            src="../assets/logo_Soc.png"
           /></v-avatar>
       </v-btn>
     </v-app-bar>
@@ -179,53 +171,40 @@
         </v-card-title>
         <v-container>
           <v-row>
-            <v-col
-              class="align-center justify-space-between"
-              cols="12"
-            >
-              <v-row align="center">
-                <v-avatar
-                  size="40px"
-                  class="mr-4"
-                >
-                  <img
-                    src="//ssl.gstatic.com/s2/oz/images/sge/grey_silhouette.png"
-                    alt=""
-                  >
-                </v-avatar>
+              <v-col cols="12">
                 <v-text-field
-                  placeholder="Name"
+                  prepend-icon="mdi-contacts"
+                  placeholder="Nome"
                 />
-              </v-row>
             </v-col>
             <v-col cols="6">
               <v-text-field
-                prepend-icon="business"
-                placeholder="Company"
+                prepend-icon="mdi-factory"
+                placeholder="Empresa"
               />
             </v-col>
             <v-col cols="6">
               <v-text-field
-                placeholder="Job title"
+                placeholder="Função"
               />
             </v-col>
             <v-col cols="12">
               <v-text-field
-                prepend-icon="mail"
+                prepend-icon="mdi-gmail"
                 placeholder="Email"
               />
             </v-col>
             <v-col cols="12">
               <v-text-field
                 type="tel"
-                prepend-icon="phone"
+                prepend-icon="mdi-cellphone-basic"
                 placeholder="(000) 000 - 0000"
               />
             </v-col>
             <v-col cols="12">
               <v-text-field
-                prepend-icon="notes"
-                placeholder="Notes"
+                prepend-icon="mdi-note"
+                placeholder="Obs"
               />
             </v-col>
           </v-row>

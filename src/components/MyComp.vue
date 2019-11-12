@@ -90,24 +90,14 @@
         <span class="hidden-sm-and-down">Gestão de Vendas</span>
       </v-toolbar-title>
       <v-spacer />
-      <v-btn icon>
+      <v-btn 
+      icon
+      @click="alert = !alert"
+      >
         <v-icon>mdi-apps</v-icon>
       </v-btn>
       <v-btn icon>
         <v-icon>mdi-bell</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        large
-      >
-        <v-avatar
-          size="32px"
-          item
-        >
-          <v-img
-            alt="logo_Small" 
-            src="../assets/logo_Soc.png"
-          /></v-avatar>
       </v-btn>
     </v-app-bar>
     <v-content>
